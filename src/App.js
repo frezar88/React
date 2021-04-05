@@ -18,10 +18,10 @@ const App = () => {
         <Header />
         <NavBar />
         <div className='app-wrapper-content'>
-          <Route path='/Dialogs' component={Dialogs} />
-          <Route path='/Profile' component={Profile} />
-          <Route path='/News' component={News} />
-          <Route path='/Music' component={Music}/>
+          <Route /* exact */ path='/Dialogs' component={Dialogs} />
+          <Route /* exact */ path='/Profile' component={Profile} />
+          <Route /* exact */ path='/News' component={News} />
+          <Route /* exact */ path='/Music' component={Music}/>
         </div>
       </div>
     </Router>
