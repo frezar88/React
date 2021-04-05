@@ -1,0 +1,48 @@
+
+
+
+.item{
+    color: yellow;
+}
+
+
+.ava__discription{
+  padding: 30px;
+  display: flex;
+  align-items: center;
+}
+.avaimg{
+  max-width:150px;
+  margin-right: 30px;
+}
+
+.info__block p{
+  margin: 0;
+  padding: 0px;
+  color: rgb(107, 104, 104);
+}
+
+.info__name{
+  margin-bottom: 18px;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+}
+
+.info__name p{
+  color: black;
+}
+.info__birthday span,.info__city span,.info__education span,.info__site a{
+  font-weight: bold;
+  color: black;
+}
+
+
+
+
+
+
+
+
+
+

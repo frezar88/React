@@ -7,28 +7,14 @@
   "h h h h h "
   "n c c c c";
   grid-template-rows: 80px 1fr;
- 
-
 }
 
-.header {
-  padding: 10px;
-  grid-area:h ;
-  background-color: chartreuse;
-}
-.header img{
-
-  width: 60px;
-  
-}
-.nav {
-  padding: 10px;
-  grid-area:n;
-  background-color: burlywood;
-}
-.content {
-  
+.app-wrapper-content{
   grid-area: c;
-  background-color: rgb(150, 150, 230);
+  background-color: rgb(194, 194, 226);
 }
+
+
+
+
 
