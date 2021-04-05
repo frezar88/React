@@ -7,11 +7,17 @@
 .item a {
   color: white;
   font-size: 18px;
+  transition: .3s;
+  text-decoration: none;
 }
 
-.item.activ a{
+.item a:visited{
+  color: white;
+}
+
+.item a.active {
   color:red;
-  font-size: 20px;
+  font-size: 18px;
 
 }
 
