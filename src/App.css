@@ -4,9 +4,10 @@
   max-width: 1280px;
   display: grid;
   grid-template-areas: 
-  "h h h h h "
-  "n c c c c";
+  "h h h h h h "
+  "n c c c c c";
   grid-template-rows: 80px 1fr;
+  grid-template-columns: 1fr 4fr;
 }
 
 .app-wrapper-content{

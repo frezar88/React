@@ -21,17 +21,7 @@ const MyPosts = () => {
                 <Post message='My name Dmitriy' />
                 <Post message='Hi, how are yoy?' />
                 <Post message="It's my first post" />
-                <Post message='Hi Bro!' />
-                <Post message='My name Dmitriy' />
-                <Post message='Hi, how are yoy?' />
-                <Post message="It's my first post" />
-                <Post message='Hi Bro!' />
-                <Post message='My name Dmitriy' />
-                <Post message='Hi, how are yoy?' />
-                <Post message="It's my first post" />
-                <Post message='Hi Bro!' />
-                <Post message='My name Dmitriy' />
-                
+             
             </div>
         </div>
     )
