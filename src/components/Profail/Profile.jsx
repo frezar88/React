@@ -8,11 +8,11 @@ import ProfileInfo from './ProfileInfo/ProfileInfo'
 
 
 const Profile = (props) => {
-  
+    console.log(props)
     return (
         <div className={s.profile}>
             <ProfileInfo />
-            <MyPosts postData={props.postData} />
+            <MyPosts postData={props.state.post} />
         </div>
     )
 }
