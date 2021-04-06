@@ -11,17 +11,19 @@ import Music from './components/Music/Music';
 
 
 
-const App = () => {
+const App = (props) => {
+  
   return (
     <Router>
       <div className="app-wrapper">
         <Header />
         <NavBar />
         <div className='app-wrapper-content'>
-          <Route /* exact */ path='/Dialogs' component={Dialogs} />
-          <Route /* exact */ path='/Profile' component={Profile} />
-          <Route /* exact */ path='/News' component={News} />
-          <Route /* exact */ path='/Music' component={Music}/>
+          <Route /* exact */ path='/Dialogs' render={() => <Dialogs dialogsData={props.dialogsData} messageData={props.messageData }/>} />
+          <Route /* exact */ path='/Profile' render={() => < Profile postData={props.postData} />} />
+          <Route /* exact */ path='/News' render={() => < News />} />
+          <Route /* exact */ path='/Music' render={() => < Music />} />
+        
         </div>
       </div>
     </Router>
