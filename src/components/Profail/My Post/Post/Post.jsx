@@ -7,6 +7,7 @@ const Post = (props) => {
             <img src="https://www.imgonline.com.ua/examples/bee-on-daisy.jpg" alt="#" />
             <p> {props.message}</p>
             <span>Like</span>
+            <span>{props.likeCount}</span>
         </div>
     )
 }

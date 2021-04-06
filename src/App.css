@@ -2,6 +2,7 @@
 .app-wrapper {
   margin: 0 auto;
   max-width: 1280px;
+  min-height: 1000px;
   display: grid;
   grid-template-areas: 
   "h h h h h h "
