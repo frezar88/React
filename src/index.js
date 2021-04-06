@@ -26,6 +26,7 @@ let message = [
   { id: 6, message: 'Hello' },
 ]
 
+
 ReactDOM.render(
   <React.StrictMode>
     <App postData={postData} dialogsData={dialogs} messageData={message} />
