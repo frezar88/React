@@ -7,7 +7,7 @@ const MyPosts = () => {
         { id: 1, message:'Hi, how are yoy?',likesCount:12},
         { id: 2, message: "It's my first post", likesCount: 2},
     ]
-    
+
     return (
         <div>
             <div className={s.post_block}>
@@ -23,9 +23,6 @@ const MyPosts = () => {
                 <Post message={postData[0].message} likeCount={postData[0].likesCount} />
                 <Post message={postData[1].message} likeCount={postData[1].likesCount} />
                 
-            
-                
-             
             </div>
         </div>
     )
