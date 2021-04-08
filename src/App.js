@@ -20,7 +20,7 @@ const App = (props) => {
         <NavBar />
         <div className='app-wrapper-content'>
           <Route /* exact */ path='/Dialogs' render={() => <Dialogs state={props.state.dialogsPage} />} />
-          <Route /* exact */ path='/Profile' render={() => < Profile state={props.state.profilePage} />} />
+          <Route /* exact */ path='/Profile' render={() => < Profile state={props.state.profilePage} addPost={props.addPost} />} />
           <Route /* exact */ path='/News' render={() => < News />} />
           <Route /* exact */ path='/Music' render={() => < Music />} />
         
