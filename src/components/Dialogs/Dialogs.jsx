@@ -9,7 +9,6 @@ import Message from './Message/Message'
 
 const Dialogs = (props) => {
    
-console.log(props)
     let dialogsElements = props.state.dialogs.map(dialog => {
         return <DialogItem name={dialog.name} id={dialog.id} />
     })
@@ -32,7 +31,7 @@ console.log(props)
             </div>
             <div className={s.messages}>
                 {messageElement}
-                <textarea onChange={change} ref={linkTextArea} value={props.state.newMessage}  cols="30" rows="10"></textarea>
+                <textarea onChange={change} ref={linkTextArea} value={props.state.newMessage} placeholder="Enter messages"  cols="30" rows="10"></textarea>
                 <button onClick={click} >dsadsa</button>
             </div>
         </div>
