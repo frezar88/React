@@ -3,6 +3,7 @@ import React from 'react'
 import s from './Dialogs.module.css'
 import DialogItem from './DialogsItem/DialogsItem'
 import Message from './Message/Message'
+import {addNewMessage, checkValueTextArea} from "../../redux/dialogs-reducer";
 
 
 
@@ -17,11 +18,12 @@ const Dialogs = (props) => {
     let linkTextArea=React.createRef()
     let click = () => {
         let areaValue = linkTextArea.current.value
-        props.addNewMessage(areaValue)
+
+      props.dispatch(addNewMessage(areaValue))
     }
     let change = () => {
         let areaValue = linkTextArea.current.value
-        props.checkValueTextArea(areaValue)
+        props.dispatch(checkValueTextArea())
     }
     
     return (
@@ -32,7 +34,7 @@ const Dialogs = (props) => {
             <div className={s.messages}>
                 {messageElement}
                 <textarea onChange={change} ref={linkTextArea} value={props.state.newMessage} placeholder="Enter messages"  cols="30" rows="10"></textarea>
-                <button onClick={click} >dsadsa</button>
+                <button onClick={click} >Send</button>
             </div>
         </div>
     )

@@ -13,15 +13,15 @@ import Music from './components/Music/Music';
 
 const App = (props) => {
 
-  
   return (
+
     <Router>
       <div className="app-wrapper">
         <Header />
         <NavBar />
         <div className='app-wrapper-content'>
-          <Route /* exact */ path='/Dialogs' render={() => <Dialogs addNewMessage={props.addNewMessage} state={props.state.dialogsPage} checkValueTextArea={props.checkValueTextArea} />} />
-          <Route /* exact */ path='/Profile' render={() => < Profile updateNowPostText={props.updateNowPostText} state={props.state.profilePage} addPost={props.addPost} newPostText={props.newPostText} />} />
+          <Route /* exact */ path='/Dialogs' render={() => <Dialogs dispatch={props.dispatch}  state={props.state.dialogsPage} />} />
+          <Route /* exact */ path='/Profile' render={() => < Profile dispatch={props.dispatch} state={props.state.profilePage} newPostText={props.newPostText} />} />
           <Route /* exact */ path='/News' render={() => < News />} />
           <Route /* exact */ path='/Music' render={() => < Music />} />
         
