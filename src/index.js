@@ -1,25 +1,28 @@
 import './index.css';
-import state, { subscribe } from './redux/state';
+import store from './redux/state';
 import reportWebVitals from './reportWebVitals';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import { addNewMessage, addPost, checkValueTextArea, updateNowPostText } from './redux/state';
 
 
 
- let reRenderEntireTree = (state) => {
+
+let reRenderEntireTree = (state) => {
+
     ReactDOM.render(
         <React.StrictMode>
-            <App state={state} addPost={addPost} addNewMessage={addNewMessage} updateNowPostText={updateNowPostText} checkValueTextArea={checkValueTextArea} />
+            <App state={state}  addPost={store.addPost.bind(store)}  addNewMessage={store.addNewMessage.bind(store)}
+                 updateNowPostText={store.updateNowPostText.bind(store)} checkValueTextArea={store.checkValueTextArea.bind(store)} />
         </React.StrictMode>,
         document.getElementById('root')
     );
 }
-reRenderEntireTree(state);
+reRenderEntireTree(store.getState());
 
-subscribe(reRenderEntireTree);
+
+store.subscribe(reRenderEntireTree);
 
 
 reportWebVitals();
